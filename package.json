@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/ZZL0927/course-summer#readme",
   "dependencies": {
-    "@zilongzhang/vuepress-theme-dargon": "^1.0.4",
-    "@zilongzhang/vuepress-theme-design": "^1.0.1"
+    "@zilongzhang/vuepress-theme-dargon": "^1.0.7"
   }
 }
