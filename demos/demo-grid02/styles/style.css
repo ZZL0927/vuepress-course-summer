@@ -1,0 +1,166 @@
+html {
+  font-family: 'Source Sans Pro', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px !important;
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.logo,
+.site-title {
+  text-align: center;
+}
+
+.logo {
+  margin-top: 2rem;
+  font-size: 6rem;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    'header'
+    'content'
+    'asideleft'
+    'asideright'
+    'footer';
+}
+
+@media screen and (min-width: 768px) {
+  .site {
+    grid-template-columns: 15rem auto;
+    grid-template-areas:
+      'header header'
+      'asideleft content'
+      'asideright content'
+      'footer footer';
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site {
+    grid-template-columns: 15rem auto 15rem;
+    grid-template-areas:
+      'header header header'
+      'asideleft content asideright'
+      'footer footer footer';
+  }
+
+  .buckets ul {
+    display: flex;
+  }
+  .buckets li {
+    flex: 1;
+  }
+  .buckets li:first-child {
+    margin-right: 10px;
+  }
+}
+
+.site > .masthead {
+  grid-area: header;
+}
+
+.site > .main-area {
+  grid-area: content;
+}
+
+.splash {
+  background: #fff6e5;
+  padding-bottom: 2rem;
+}
+
+.splash-content {
+  padding: 1.5rem;
+}
+.buckets {
+  padding: 2rem 1rem 1rem;
+  background: #3e454c;
+}
+
+.buckets ul {
+  margin: 0;
+  padding: 0;
+}
+
+.buckets li {
+  margin-bottom: 1rem;
+  background: white;
+  list-style-type: none;
+}
+
+.bucket {
+  padding: 1.5rem;
+}
+
+/* More section */
+
+.more {
+  padding: 2rem;
+}
+
+.more-content {
+  padding: 1.5rem;
+}
+.site > .sidebar {
+  grid-area: asideleft;
+  background: #ff7f66;
+  padding: 1rem;
+}
+
+.site > .sidebar:last-of-type {
+  grid-area: asideright;
+  background: #2185c5;
+}
+
+.site > .colophon {
+  grid-area: footer;
+  padding: 2rem;
+  background: hsl(0, 0%, 10%);
+  color: white;
+  text-align: center;
+}

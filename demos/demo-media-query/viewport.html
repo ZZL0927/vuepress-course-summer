@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viewport</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .wrap {
+      width: 750px;
+      margin: auto;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 667px;
+      /* display: flex; */
+      color: #fff;
+      font-size: 18px;
+    }
+    .item {
+      background: cornflowerblue;
+      /* flex: 1;
+      height: 400px; */
+    }
+    .item:last-child {
+      background: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item">50%</div>
+    <div class="item">50%</div>
+  </div>
+</body>
+</html>

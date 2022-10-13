@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+html,
+body,
+.page {
+  margin: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  margin: auto;
+}
+.top {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: #d23e34;
+  padding-top: 1.5rem;
+  box-shadow: 0 0.2rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.top-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.tabs {
+  padding: 1.5rem;
+}
+.tabs > ul {
+  margin: 0;
+  display: flex;
+  border-radius: 1rem;
+  background-color: #cd2523;
+  overflow: hidden;
+  padding: 0;
+}
+.tab-item {
+  flex: 1;
+  text-align: center;
+  line-height: 4rem;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-item img {
+  width: 2.4rem;
+  margin-right: 0.8rem;
+}
+.tab-active {
+  background-color: #b9211f;
+}
+.cats {
+  padding: 1.5rem;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #fff;
+}
+.cat-list {
+  display: flex;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+}
+.cat-list::-webkit-scrollbar {
+  display: none;
+}
+.cat-item {
+  line-height: 2.2rem;
+  background-color: #f7f7f7;
+  font-size: 1.4rem;
+  color: #333;
+  padding: 0 1.2rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+  list-style: none;
+}
+.cat-active {
+  background-color: #d23e34;
+  color: #fff;
+}
+.list {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem;
+}
+.sku {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+}
+.sku:last-child {
+  margin-bottom: 0;
+}
+.cover {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.cover-img {
+  width: 100%;
+}
+.cover-rank {
+  position: absolute;
+  width: 3.6rem;
+  left: 0;
+  top: 0;
+}
+.sku-title {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.sku-footer {
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+  color: #999;
+}
+.sku-footer span {
+  margin-left: 0.5rem;
+}
+.sku-footer i {
+  margin-left: 1.5rem;
+}

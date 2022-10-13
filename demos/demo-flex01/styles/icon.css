@@ -1,0 +1,23 @@
+@font-face {
+  font-family: icons;
+  src: url(../fonts/icons.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+.iconfont {
+  font-family: icons;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.icon-comment:before {
+  content: "d"
+}
+
+.icon-zhi:before {
+  content: "\503C"
+}
+
+.icon-thumb-up:before {
+  content: "\E96D"
+}

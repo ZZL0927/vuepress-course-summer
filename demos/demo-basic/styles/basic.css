@@ -1,0 +1,514 @@
+/* 基础样式 */
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: zillaslab,palatino,"Palatino Linotype",serif;
+}
+
+.app {
+  width: 1000px;
+  margin: 30px auto;
+  
+}
+
+section {
+  border: 1px solid #00458b;
+  background-color: #eee;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 38px;
+  margin-bottom: 36px;
+  color: #212121;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 32px;
+  background-color: #212121;
+  color: #fff;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  max-width: max-content;
+  padding: 0 3px;
+}
+
+/* 层叠 */
+.text-one {
+  color: red;
+}
+.text-one {
+  color: blue;
+}
+/* 优先级 */
+.heading-one {
+  color: red;
+}
+h1 {
+  color: blue;
+}
+
+h4 {
+  font-size: 1.5em;
+  color: #000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.small {
+  font-size: 1em;
+}
+.bright {
+  color: rebeccapurple;
+}
+
+.box-one {
+  color: red;
+}
+.text-two {
+  color: blue;
+}
+.box-one span {
+  color: red;
+}
+
+/* 继承 */
+.p-one {
+  color: blue;
+}
+.p-one span {
+  color: red;
+}
+
+/* 选择器类型 */
+#box-two {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 16px 0;
+}
+.text-three {
+  color: red;
+  font-style: italic;
+}
+a[title] {
+  color: blue;
+  text-decoration: none;
+}
+.btn:hover {
+  color: blue;
+}
+.link-one::after {
+  content: '→';
+}
+.box-three div {
+  border: 1px solid blue;
+  margin: 10px;
+}
+.box-four > div {
+  border: 1px solid blue;
+  margin: 10px;
+}
+
+/* 盒子模型 */
+.box-five {
+  margin: 10px;
+  border: 1px solid blue;
+}
+.box-six {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+.box-six > span {
+  width: 100px;
+  height: 30px;
+  border: 1px solid red;
+}
+.box-six > span:last-child {
+  font-size: 30px;
+}
+.box-seven {
+  width: 350px;
+  height: 80px;
+  margin: 25px;
+  padding: 25px;
+  border: 5px solid blue;
+}
+.box-eight {
+  box-sizing: border-box;
+}
+
+/* 背景 */
+.bg-one {
+  background-color: brown;
+  color: white;
+}
+.bg-two {
+  background-image: url(../imgs/star.png);
+}
+.bg-three {
+  background: url(../imgs/star.png) green;
+}
+.bg-four {
+  background: url(../imgs/star.png) repeat-x;
+}
+.bg-five {
+  background: url(../imgs/star.png) repeat-y;
+}
+.bg-six {
+  background: url(../imgs/star.png) center no-repeat;
+}
+.bg-seven {
+  height: 150px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+/* 边框 */
+.border-one {
+  border: 1px solid blue;
+}
+.border-two {
+  border: 1px dashed blue;
+}
+.border-three {
+  border: 1px dotted blue;
+}
+.border-four {
+  border: 10px solid;
+  border-top-color: red;
+  border-right-color: blue;
+  border-bottom-color: violet;
+  border-left-color: black;
+}
+
+/* 圆角 */
+.radius-one {
+  border-width: 1px;
+  border-radius: 15px;
+}
+.radius-two {
+  border-width: 1px;
+  border-radius: 15px 0;
+}
+.radius-three {
+  border-width: 1px;
+  border-radius: 15px 15px 0 0;
+}
+.radius-four {
+  border-width: 1px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+/* 阴影 */
+.shadow-wrap {
+  background: white;
+}
+.shadow-box {
+  margin: 25px;
+  padding: 25px;
+  width: 150px;
+  height: 150px;
+}
+.shadow-one {
+  box-shadow: 0 0 10px 0 rgb(65, 69, 73, 0.3);
+}
+.shadow-two {
+  box-shadow: inset 0 0 10px 0 rgb(65, 69, 73, 0.3);
+}
+.shadow-three {
+  border: 1px solid #eee;
+  transition: all 0.3;
+}
+.shadow-three:hover {
+  box-shadow: 3px 3px 10px 0 rgb(65, 69, 73, 0.3);
+}
+
+/* 溢出的内容 */
+.overflow-one {
+  width: 400px;
+  border-width: 1px;
+}
+.overflow-two {
+  width: 400px;
+  border-width: 1px;
+  overflow: auto;
+}
+.overflow-three {
+  width: 400px;
+  border-width: 1px;
+  overflow: hidden;
+}
+
+/* CSS的值和单位 */
+.unit-wrap {
+  font-size: 20px;
+}
+.unit-one {
+  font-size: 16px;
+}
+.unit-two {
+  font-size: 1.2em;
+}
+html {
+  font-size: 10px;
+}
+.unit-three {
+  font-size: 3rem;
+}
+.unit-four {
+  font-size: 70%;
+}
+.unit-five {
+  width: 50%;
+}
+.unit-six {
+  color: red;
+}
+.unit-seven {
+  color: #ff0000;
+}
+.unit-eight {
+  color: rgb(255, 0, 0);
+}
+.unit-nine {
+  color: rgba(255, 0, 0, 0.6);
+}
+
+/* 文字排版 */
+.text-four {
+  font-family: Microsoft Yahei;
+  text-indent: 2em;
+  line-height: 1.5em;
+  color: #212121;
+}
+.text-five {
+  text-decoration: underline wavy red;
+}
+.text-six {
+  font-style: italic;
+  font-weight: bold;
+}
+.text-seven {
+  text-align: center;
+}
+.link-two {
+  color: #212121;
+  text-decoration: none;
+}
+.link-two:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* CSS变换 */
+.trans-one {
+  border: 1px solid red;
+  transform: translate(200px, 20px);
+}
+.trans-two {
+  border: 1px solid red;
+  transform: scale(1.3);
+}
+.trans-three {
+  border: 1px solid red;
+  transform: rotate(45deg)
+}
+
+/* CSS过渡 */
+.trans-four {
+  transition: all 0.5s ease-in-out;
+}
+.trans-four:hover {
+  transform: rotate(360deg) scale(1.2);
+  opacity: 0.7;
+}
+.trans-five {
+  transition: all 0.5s ease-in-out;
+}
+.trans-five:hover {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+/* CSS动画 */
+.animate-wrap {
+  height: 300px;
+  overflow: hidden;
+}
+.animate-one {
+  animation: 1.5s animate-a paused infinite alternate;
+}
+.animate-wrap:hover .animate-one {
+  animation-play-state: running;
+}
+@keyframes animate-a {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0;
+    margin-top: 200px;
+  }
+}
+.animate-two {
+  animation: 2s animate-b paused infinite;
+}
+.animate-wrap:hover .animate-two {
+  animation-play-state: running;
+}
+@keyframes animate-b {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    transform: translate(700px, 50px) scale(1.2);
+  }
+  70% {
+    transform: translate(300px, 200px) scale(0.8) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(360deg);
+  }
+}
+.animate-three {
+  animation: 3s linear animate-c infinite;
+}
+@keyframes animate-c {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 定位 */
+.pos-wrap {
+  padding: 20px;
+  position: relative;
+}
+.pos-wrap p {
+  background: aqua;
+  border: 3px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
+.pos-wrap span {
+  background: red;
+  border: 1px solid black;
+}
+.pos-wrap .pos-rel {
+  position: relative;
+  background: yellow;
+  top: -30px;
+  left: 30px;
+  z-index: 1;
+}
+.pos-wrap .pos-abs {
+  position: absolute;
+  background: pink;
+  left: 0;
+  top: 100px;
+}
+
+/* Flex弹性盒子布局 */
+.flex-item {
+  min-width: 50px;
+  min-height: 50px;
+  background: lightseagreen;
+  border: 5px solid pink;
+  color: #fff;
+  margin: 5px;
+  flex: 1;
+}
+.flex-one {
+  display: flex;
+}
+.flex-two {
+  display: flex;
+  flex-direction: column;
+}
+.flex-three {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-three .flex-item {
+  width: 200px;
+  flex: inherit;
+}
+.flex-one .flex-fixed {
+  width: 600px;
+  flex: inherit;
+}
+.flex-four {
+  display: flex;
+  height: 120px;
+}
+.flex-five {
+  display: flex;
+  align-items: center;
+}
+.flex-six {
+  display: flex;
+  align-items: flex-start;
+}
+.flex-seven {
+  display: flex;
+  align-items: flex-end;
+}
+.flex-eight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-eight .flex-item {
+  width: 200px;
+  flex: inherit;
+}
+.flex-nine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-nine .flex-item {
+  width: 200px;
+  flex: inherit;
+}
+.flex-ten {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.flex-ten .flex-item {
+  width: 200px;
+  flex: inherit;
+}
+
+/* Grid网格布局 */
+.grid-item {
+  width: 100%;
+  height: 100px;
+  border: 15px;
+  background: darkcyan;
+}
+.grid-one {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 15px;
+}
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+.grid-three {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+.grid-four {
+  display: grid;
+  grid-template-columns: repeat(3, 1.5fr 1fr);
+  gap: 15px;
+}

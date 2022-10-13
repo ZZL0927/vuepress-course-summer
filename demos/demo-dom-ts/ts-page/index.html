@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QQ音乐</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <div class="songlist"></div>
+    </section>
+  </main>
+  <script type="text/template" id="tpl">
+    <div class="song-item">
+      <div class="cover-wrap">
+        <img src="{{cover}}" class="cover-img">
+        <div class="cover-mask"></div>
+        <img src="imgs/cover_play.png" class="cover-play">
+      </div>
+      <div class="song-intro nowrap">
+        <a href="#" class="song-name">{{name}}</a>
+        <div class="song-singer nowrap">{{singer}}</div>
+      </div>
+      <div>{{time}}</div>
+    </div>
+  </script>
+  <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.button {
+  background: #fff;
+  color: #333;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.default:hover {
+  color: #40a9ff;
+  border-color: #40a9ff;
+}
+.primary {
+  background: #1890ff;
+  color: #fff;
+  border-color: #1890ff;
+}
+.primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}

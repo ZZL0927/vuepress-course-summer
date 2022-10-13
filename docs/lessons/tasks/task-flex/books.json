@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Python编程：从入门到实践",
+    "author": "埃里克·马瑟斯",
+    "rating": 86.3,
+    "readingCount": 746,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/930/22806930/t7_22806930.jpg",
+    "tag": "好评如潮"
+  },
+  {
+    "title": "JavaScript高级程序设计（第4版）",
+    "author": "马特·弗里斯比",
+    "rating": 86.7,
+    "readingCount": 329,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/683/34336683/t7_34336683.jpg",
+    "tag": ""
+  },
+  {
+    "title": "网络是怎样连接的",
+    "author": "户根勤",
+    "rating": 82.8,
+    "readingCount": 319,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/755/907755/t7_907755.jpg",
+    "tag": "脍炙人口"
+  },
+  {
+    "title": "操作系统导论",
+    "author": "雷姆兹·H.阿帕希杜塞尔 安德莉亚·C.阿帕希杜塞尔",
+    "rating": 91.3,
+    "readingCount": 292,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/184/30179184/t7_30179184.jpg",
+    "tag": ""
+  },
+  {
+    "title": "C++ Primer（中文版）（第5版）",
+    "author": "Stanley B·Lippman Josée Lajoie Barbara E·Moo",
+    "rating": 86.4,
+    "readingCount": 264,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/196/33692196/t7_33692196.jpg",
+    "tag": ""
+  },
+  {
+    "title": "Python编程：从入门到实践（第2版）",
+    "author": "埃里克·马瑟斯",
+    "rating": 67.2,
+    "readingCount": 252,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/681/34336681/t7_34336681.jpg",
+    "tag": ""
+  },
+  {
+    "title": "Redis设计与实现",
+    "author": "黄健宏",
+    "rating": 85.4,
+    "readingCount": 237,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/0/622000/t7_622000.jpg",
+    "tag": "好评如潮"
+  },
+  {
+    "title": "算法图解",
+    "author": "巴尔加瓦",
+    "rating": 79.6,
+    "readingCount": 215,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/916/22806916/t7_22806916.jpg",
+    "tag": "值得一读"
+  },
+  {
+    "title": "编码：隐匿在计算机软硬件背后的语言",
+    "author": "查尔斯·佩措尔德",
+    "rating": 89.8,
+    "readingCount": 208,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/9/33381009/t7_33381009.jpg",
+    "tag": ""
+  },
+  {
+    "title": "利用Python进行数据分析（原书第2版）",
+    "author": "韦斯·麦金尼",
+    "rating": 84.5,
+    "readingCount": 189,
+    "cover": "https://wfqqreader-1252317822.image.myqcloud.com/cover/904/22739904/t7_22739904.jpg",
+    "tag": "脍炙人口"
+  }
+]

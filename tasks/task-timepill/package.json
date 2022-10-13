@@ -1,0 +1,24 @@
+{
+  "name": "task-timepill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "homepage": "./",
+  "scripts": {
+    "dev": "npx parcel src/pages/*"
+  },
+  "author": "zykee",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.18.0",
+    "parcel": "^2.5.0",
+    "standard": "^17.0.0",
+    "typescript": "^4.7.4"
+  }
+}

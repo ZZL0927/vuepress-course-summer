@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORS</title>
+</head>
+<body>
+  <p>
+    <button id="blocked">默认跨域请求，会被浏览器阻断</button>
+  </p>
+  <p>
+    <button id="simple">简单请求</button>
+  </p>
+  <p>
+    <button id="preflight">复杂请求，会先预检</button>
+  </p>
+  <script>
+    let blocked = document.getElementById('blocked')
+    blocked.addEventListener('click', async () => {
+      let res = await fetch('http://127.0.0.1:3270/cors/blocked')
+      let json = await res.json()
+      console.log(json)
+    })
+  </script>
+  <script>
+    let simple = document.getElementById('simple')
+    simple.addEventListener('click', async () => {
+      let res = await fetch('http://127.0.0.1:3270/cors/normal')
+      let json = await res.json()
+      console.log(json)
+    })
+  </script>
+  <script>
+    let preflight = document.getElementById('preflight')
+    preflight.addEventListener('click', async () => {
+      let res = await fetch('http://127.0.0.1:3270/cors/normal', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: 'Tom'
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      let json = await res.json()
+      console.log(json)
+    })
+  </script>
+</body>
+</html>

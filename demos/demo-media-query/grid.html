@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    .grid-one {
+      width: 800px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    .grid-two {
+      width: 800px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 100px;
+      grid-gap: 20px;
+    }
+    .grid-three {
+      width: 800px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 20px;
+    }
+    .grid-four {
+      width: 800px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: minmax(100px, auto);
+      grid-auto-rows: minmax(50px, auto);
+      grid-gap: 20px;
+    }
+    .grid-five {
+      width: 80%;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-auto-rows: minmax(100px, auto);
+      grid-gap: 20px;
+    }
+    .grid-item {
+      border: 2px solid rgb(79,185,227);
+      background: rgb(207,232,220);
+      border-radius: 5px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-one">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+  <hr>
+  <div class="grid-two">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      高度固定，内容溢出<br />
+      高度固定，内容溢出<br />
+      高度固定，内容溢出<br />
+      高度固定，内容溢出<br />
+      高度固定，内容溢出<br />
+      高度固定，内容溢出<br />
+      高度固定，内容溢出<br />
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+  <hr>
+  <div class="grid-three">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+      高度自动扩展<br />
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+  <hr>
+  <div class="grid-four">
+    <div class="grid-item">
+      显式网格高度
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      隐式网格高度自动扩展<br />
+      隐式网格高度自动扩展<br />
+      隐式网格高度自动扩展<br />
+      隐式网格高度自动扩展<br />
+      隐式网格高度自动扩展<br />
+      隐式网格高度自动扩展<br />
+      隐式网格高度自动扩展<br />
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item">
+      隐式网格高度
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+  <hr>
+  <div class="grid-five">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
+</body>
+</html>

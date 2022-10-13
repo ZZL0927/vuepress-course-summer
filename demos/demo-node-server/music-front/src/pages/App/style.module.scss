@@ -1,0 +1,36 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 15px;
+}
+.footer {
+  height: 50px;
+  background: #fff;
+  border-top: 1px solid #ebedf0;
+  display: flex;
+  justify-content: space-around;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #666;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 0;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+.active {
+  color: #31c27c;
+}

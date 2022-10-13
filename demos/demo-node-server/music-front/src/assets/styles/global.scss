@@ -1,0 +1,38 @@
+:root:root {
+  --adm-color-primary: #31c27c;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  background: #f4f4f4;
+  min-height: 100vh;
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 15px;
+}
+.navbar {
+  background: #fff;
+}
+.content {
+  min-height: calc(100vh - 145px);
+}
+.grid {
+  display: grid;
+  gap: 15px;
+  min-height: calc(100vh - 145px); 
+}

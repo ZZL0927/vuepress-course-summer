@@ -1,0 +1,9 @@
+$width: 10px;
+$height: $width + 10px;
+$color: #f00;
+
+.header {
+  width: $width;
+  height: $height;
+  color: $color;
+}

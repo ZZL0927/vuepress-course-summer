@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url(../imgs/noise.jpg);
+}
+
+body {
+  margin: 2.2rem;
+}
+
+div#resume {
+  min-width: 310px;
+  font: 16px Helvetica, Avernir, sans-serif;
+  line-height: 24px;
+  color: #000;
+  position: relative;
+}
+
+div#resume h1 {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #999;
+  line-height: 50px;
+}
+
+div#resume h2 {
+  font-size: 20px;
+  margin: 0 0 6px 0;
+  position: relative;
+}
+
+div#resume h2 span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #999;
+  font-weight: normal;
+}
+
+div#resume p {
+  margin: 0 0 16px 0;
+}
+
+div#resume a {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+div#resume a:hover {
+  border-bottom-style: solid;
+  color: #000;
+}
+
+div#resume p.objective {
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #666;
+  width: calc(100% - 250px);
+}
+
+div#resume dt {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+  padding: 0 26px 0 0;
+  width: 150px;
+  border-right: 1px solid #999;
+}
+
+div#resume dl {
+  display: table-row;
+}
+
+div#resume dl dt,
+div#resume dl dd {
+  display: table-cell;
+  padding-bottom: 20px;
+}
+
+div#resume dl dd {
+  width: 500px;
+  padding-left: 26px;
+}
+
+div#resume img {
+  padding: 10px;
+  background: #fff;
+  margin: 0 30px;
+  transform: rotate(-4deg);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  max-width: 220px;
+  position: absolute;
+  right: 0;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "koa-demo",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha",
+    "nodemon": "nodemon ./dist/index.js",
+    "dev": "npx tsc -w",
+    "serve": "node ./dist/index.js",
+    "build": "npx tsc"
+  },
+  "dependencies": {
+    "busboy": "^0.3.1",
+    "dayjs": "^1.10.6",
+    "form-data": "^4.0.0",
+    "joi": "^17.4.0",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "lowdb": "^1.0.0",
+    "moment": "^2.29.3",
+    "querystring": "^0.2.1",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/busboy": "^1.5.0",
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.3",
+    "@types/koa-static": "^4.0.2",
+    "@types/lowdb": "^1.0.11",
+    "@types/mongodb": "^3.6.20",
+    "@types/node": "^16.0.0",
+    "@types/uuid": "^8.3.4",
+    "axios": "^0.21.4",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2",
+    "nodemon": "^2.0.12",
+    "undici": "^4.1.0"
+  }
+}

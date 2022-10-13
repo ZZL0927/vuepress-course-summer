@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QQ音乐</title>
+    <link rel="stylesheet" href="styles/music.css" />
+    <script src="scripts/music.js"></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="songlist"></div>
+      </section>
+    </main>
+    <script type="text/template" id="tpl">
+      <div class="song-item">
+        <div class="cover-wrap">
+          <img src="{{cover}}" class="cover-img">
+          <div class="cover-mask"></div>
+          <img src="imgs/cover_play.png" class="cover-play">
+        </div>
+        <div class="song-intro nowrap">
+          <a href="#" class="song-name">{{name}}</a>
+          <div class="song-singer nowrap">{{singer}}</div>
+        </div>
+        <div>{{time}}</div>
+      </div>
+    </script>
+    <script>
+      function timeFormat(interval) {
+        let minutes = Math.floor(interval / 60)
+          .toString()
+          .padStart(2, "0")
+        let seconds = (interval % 60).toString().padStart(2, "0")
+        return `${minutes}:${seconds}`
+      }
+
+      let tpl = document.getElementById("tpl").innerHTML
+      // let html = pageData.songlist.map(song => {
+      //   let time = timeFormat(song.interval)
+      //   let singer = song.singer.map(item => `<a href="#" class="song-singer">${item}</a>`)
+      //                           .join('<span class="song-sep">/</span>')
+      //   let result = tpl.replace('{{name}}', song.name)
+      //                   .replace('{{singer}}', singer)
+      //                   .replace('{{time}}', time)
+      //                   .replace('{{cover}}', song.cover)
+      //   return result
+      // }).join('')
+      let html = pageData.songlist.reduce((pre, cur) => {
+        let time = timeFormat(cur.interval)
+        let singer = cur.singer
+          .map((item) => `<a href="#" class="song-singer">${item}</a>`)
+          .join('<span class="song-sep">/</span>')
+        let result = tpl
+          .replace("{{name}}", cur.name)
+          .replace("{{singer}}", singer)
+          .replace("{{time}}", time)
+          .replace("{{cover}}", cur.cover)
+        return pre + result
+      }, "")
+      document.querySelector(".songlist").innerHTML = html
+    </script>
+  </body>
+</html>

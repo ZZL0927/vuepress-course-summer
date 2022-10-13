@@ -1,0 +1,25 @@
+{
+  "name": "course-summer",
+  "version": "1.0.0",
+  "description": "> 禁止外传。",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZZL0927/course-summer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZZL0927/course-summer/issues"
+  },
+  "homepage": "https://github.com/ZZL0927/course-summer#readme",
+  "dependencies": {
+    "@zilongzhang/vuepress-theme-dargon": "^1.0.4",
+    "@zilongzhang/vuepress-theme-design": "^1.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+#header {
+  color: black;
+  .navigation {
+    font-size: 12px;
+  }
+  .logo {
+    width: 300px;
+  }
+}
+
+#header {
+  color: black;
+
+  &:hover {
+    color: red;
+  }
+
+  & > span {
+    font-weight: bold;
+  }
+}

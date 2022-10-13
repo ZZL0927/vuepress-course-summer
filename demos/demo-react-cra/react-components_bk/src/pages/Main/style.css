@@ -1,0 +1,6 @@
+.btns {
+  margin-bottom: 20px;
+}
+.btns > * {
+  margin-right: 15px;
+}

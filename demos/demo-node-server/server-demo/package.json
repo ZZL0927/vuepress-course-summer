@@ -1,0 +1,13 @@
+{
+  "name": "server-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.4",
+    "typescript": "^4.7.4"
+  }
+}

@@ -1,0 +1,6 @@
+@use "vars";
+
+#header {
+  background-color: vars.$primaryColor;
+  color: vars.$textColor;
+}

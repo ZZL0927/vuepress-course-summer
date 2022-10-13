@@ -1,0 +1,24 @@
+{
+  "name": "koa-demo",
+  "version": "0.1.0",
+  "description": "koa demo app",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.3",
+    "dotenv": "^16.0.1",
+    "joi": "^17.6.0",
+    "koa": "^2.13.4",
+    "koa-body": "^5.0.0",
+    "koa-router": "^11.0.1",
+    "mongodb": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4"
+  }
+}

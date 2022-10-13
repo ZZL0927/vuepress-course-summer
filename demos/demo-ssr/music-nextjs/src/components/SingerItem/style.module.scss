@@ -1,0 +1,19 @@
+.wrap {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: #999;
+  font-size: 14px;
+}
+.pic {
+  border-radius: 20px;
+}
+.title {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #000;
+}

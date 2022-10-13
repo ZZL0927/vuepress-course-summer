@@ -1,0 +1,19 @@
+.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.links a {
+  display: flex;
+  padding: 5px 10px;
+  margin: 10px;
+  color: #000;
+  text-decoration: none;
+}
+.links a.active {
+  color: #fff;
+  background: #000;
+}
+.main {
+  padding: 20px;
+  border: 1px solid #ccc;
+}

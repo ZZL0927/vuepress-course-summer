@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello React</title>
+    <script src="https://cdn.staticfile.org/react/17.0.2/umd/react.development.min.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/17.0.2/umd/react-dom.development.min.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/7.0.0-beta.3/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="text/babel">
+      class HelloMessage extends React.Component {
+        render() {
+          return (
+            <div>Hello {this.props.name}</div>
+          )
+        }
+      }
+      class Counter extends React.Component {
+        constructor() {
+          super()
+          this.state = {
+            count: 0
+          }
+        }
+        increase() {
+          this.setState({
+            count: this.state.count + 1
+          })
+        }
+        render() {
+          return (
+            <div>
+              <span>{this.state.count}</span>
+              <button onClick={this.increase.bind(this)}>Increase</button>
+            </div>
+          )
+        }
+      }
+      class Condition extends React.Component {
+        constructor() {
+          super()
+          this.state = {
+            finished: true,
+            count: 30
+          }
+        }
+
+        renderText() {
+          if (this.state.count < 10) {
+            return <span>小于10</span>
+          }
+          if (this.state.count < 20) {
+            return <span>小于20</span>
+          }
+          return <span>大于等于20</span>
+        }
+
+        render() {
+          return (
+            <div>
+              <p>status: {this.state.finished && <span>finished</span>}</p>
+              <p>status: {this.state.finished ? <span>finished</span> : <span>not finished</span>}</p>
+              <p>status: {this.state.count > 0 && <span>finished</span>}</p>
+              <p>status: {this.state.count ? <span>finished</span> : <span>not finished</span>}</p>
+              <p>count: {this.renderText()}</p>
+            </div>
+          )
+        }
+      }
+      class List extends React.Component {
+        constructor() {
+          super()
+          this.state = {
+            rows: ['a', 'b', 'c'],
+            areas: [{id: 1, name: '内地'}, {id: 2, name: '港台'}, {id: 3, name: '欧美'}]
+          }
+        }
+
+        render() {
+          let list = [
+            <li key="a">a1</li>,
+            <li key="b">b2</li>,
+            <li key="c">c3</li>
+          ]
+          return (
+            <div>
+              <ul>{list}</ul>
+              <ul>
+                {this.state.rows.map(item => <li key={item}>{item}</li>)}
+              </ul>
+              <ul>
+                {this.state.areas.map(item => <li key={item.id}>{item.name}</li>)}
+              </ul>
+            </div>
+          )
+        }
+      }
+      class ReactEvent extends React.Component {
+
+        constructor() {
+          super()
+          this.state = {
+            areas: [{id: 1, name: '内地'}, {id: 2, name: '港台'}, {id: 3, name: '欧美'}]
+          }
+        }
+
+        onBtnClick() {
+          console.log('button clicked!')
+        }
+
+        onLinkClick(event) {
+          console.log('link clicked!')
+          event.preventDefault()
+        }
+
+        delItem(area) {
+          let index = this.state.areas.indexOf(area)
+          this.state.areas.splice(index, 1)
+          this.setState({
+            areas: this.state.areas
+          })
+          this.myRef = React.createRef()
+        }
+
+        componentDidMount() {
+          console.log(this.myRef)
+        }
+
+        render() {
+          let el = (
+            <div>
+              <div>1</div>
+              <div>2</div>
+            </div>
+          )
+          return (
+            <div>
+              <button onClick={this.onBtnClick.bind(this)}>Click</button>
+              <a href="https://reactjs.org/" target="_blank" onClick={this.onLinkClick.bind(this)}>阻止默认行为</a>
+              <ul>
+                {this.state.areas.map(item => (
+                  <li key={item.id}>{item.name} - <button onClick={() => this.delItem(item)}>删除</button></li>
+                ))}
+              </ul>
+              {el}
+              <div ref={ref => this.myRef = ref}>
+                {this.state.areas.map(area => (
+                  <React.Fragment key={area.id}>
+                    <span>{area.name}</span>
+                    <i>/</i>
+                  </React.Fragment>
+                ))}
+              </div>
+            </div>
+          )
+        }
+      }
+      class App extends React.Component {
+        render() {
+          return (
+            <div>
+              <HelloMessage name="Frank" />
+              <Counter />
+              <Condition />
+              <List />
+              <ReactEvent />
+            </div>
+          )
+        }
+      }
+      ReactDOM.render(
+        <App />,
+        document.getElementById('app')
+      )
+    </script>
+  </body>
+</html>

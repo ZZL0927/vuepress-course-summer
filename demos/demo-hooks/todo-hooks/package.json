@@ -1,0 +1,12 @@
+{
+  "name": "todo-hooks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve build -l 4013 -s"
+  },
+  "dependencies": {
+    "serve": "^13.0.2"
+  }
+}
